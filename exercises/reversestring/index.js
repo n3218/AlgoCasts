@@ -1,11 +1,23 @@
-// --- Directions
-// Given a string, return a new string with the reversed
-// order of characters
-// --- Examples
-//   reverse('apple') === 'leppa'
-//   reverse('hello') === 'olleh'
-//   reverse('Greetings!') === '!sgniteerG'
+// #2
+function reverse(str) {
+  let reversed = ""
+  for (let char of str) {
+    reversed = char + reversed
+    debugger
+  }
+  return reversed
+}
 
-function reverse(str) {}
+reverse("abcde")
 
-module.exports = reverse;
+module.exports = reverse
+
+// #1
+// function reverse(str) {
+//   return str.split("").reverse().join("")
+// }
+
+// #3
+// function reverse(str) {
+//   return str.split("").reduce((rev, char) => char + rev, "")
+// }
